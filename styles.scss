@@ -1,0 +1,304 @@
+body{
+   height: 100vh;
+    background: rgba(94, 128, 232, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    
+}
+
+.header{
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    margin-top: 0.5rem;
+}
+.statsheet{
+width: 100%;
+height: 80%;
+
+margin-top: 5px;
+}
+.statsheet-header{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    height: 5vh;
+    align-items: center;
+}
+
+.players{
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+&__1{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1135px;
+    height: 3vh;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+}
+&__2{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1135px;
+    height: 3vh;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+}
+&__3{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1135px;
+    height: 3vh;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+}
+&__4{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1135px;
+    height: 3vh;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+}
+&__5{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1135px;
+    height: 3vh;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+}
+&__6{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1135px;
+    height: 3vh;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+}
+&__7{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1135px;
+    height: 3vh;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+}
+&__8{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1135px;
+    height: 3vh;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+}
+&__9{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1135px;
+    height: 3vh;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+}
+&__10{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1135px;
+    height: 3vh;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+}
+    
+
+&__11{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1135px;
+    height: 3vh;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+}
+&__12{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1135px;
+    height: 3vh;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+}
+&__13{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1135px;
+    height: 3vh;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+}
+&__14{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1135px;
+    height: 3vh;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+}
+&__15{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1135px;
+    height: 3vh;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+}
+}
+.logo{
+    height: 10vh;
+}
+.footer{
+    display: flex;
+    gap:20px;
+}
+
+#reset{
+    height: 4vh;
+    margin-top: 1rem;
+}
+
+button:hover{
+    background: rgba(6, 4, 4, 0.3);
+}
+
+@media (max-width: 1024px) { // Laptops
+    .statsheet {
+        width: 95%;
+    }
+    .players {
+        &__1, &__2, &__3, &__4, &__5, &__6, &__7, &__8, &__9, &__10, &__11, &__12, &__13, &__14, &__15{
+            max-width: 700px;
+        } 
+    }
+}
+
+@media (max-width: 768px) { // Tablets
+    .statsheet {
+        width: 95%;
+    }
+    .statsheet-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .players  {
+
+    &__1, &__2, &__3, &__4, &__5, &__6, &__7, &__8, &__9, &__10, &__11, &__12, &__13, &__14, &__15{
+        max-width: 90%;
+        gap: 1rem;
+        font-size: 0.9rem;
+    }    
+    }
+}
+
+@media (max-width: 480px) { // Mobile Phones
+    .players{
+        &__1, &__2, &__3, &__4, &__5, &__6, &__7, &__8, &__9, &__10, &__11, &__12, &__13, &__14, &__15{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 0.5rem;
+        max-width: 100%;
+        }    
+    }
+    .header {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .statsheet-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+}

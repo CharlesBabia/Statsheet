@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="cru-logo.png">
+
+        <h3>XAVIER UNIVERSITY BASKETBALL TEAM STATSHEET</h3></div>
+    <div class="statsheet">
+    <div class="statsheet-header">
+        <input type="text" placeholder="Enter Team Name">
+    </div>
+    <div class="players">
+        <div class="players__1">
+            <input type="text" placeholder="Enter Player Name">
+            <p>Points: <span id="point-1">0</span> 
+                <button onclick="updateStat('point-1', true)">+</button>
+                <button onclick="updateStat('point-1', false)">-</button>
+            </p>
+            
+            <p>Assists: <span id="assist1">0</span> 
+                <button onclick="updateStat('assist1', true)">+</button>
+                <button onclick="updateStat('assist1', false)">-</button>
+            </p>
+            
+            <p>Rebounds: <span id="rebound1">0</span> 
+                <button onclick="updateStat('rebound1', true)">+</button>
+                <button onclick="updateStat('rebound1', false)">-</button>
+            </p>
+            
+            <p>Steals: <span id="steal1">0</span> 
+                <button onclick="updateStat('steal1', true)">+</button>
+                <button onclick="updateStat('steal1', false)">-</button>
+            </p>
+            
+            <p>Blocks: <span id="block1">0</span> 
+                <button onclick="updateStat('block1', true)">+</button>
+                <button onclick="updateStat('block1', false)">-</button>
+            </p>
+            
+            <p>Fouls: <span id="foul1">0</span> 
+                <button onclick="updateStat('foul1', true)">+</button>
+                <button onclick="updateStat('foul1', false)">-</button>
+            </p>
+            
+        </div>
+        <div class="players__2">
+            <input type="text" placeholder="Enter Player Name">
+            <p>Points: <span id="point-2">0</span> 
+                <button onclick="updateStat('point-2', true)">+</button>
+                <button onclick="updateStat('point-2', false)">-</button>
+            </p>
+            
+            <p>Assists: <span id="assist2">0</span> 
+                <button onclick="updateStat('assist2', true)">+</button>
+                <button onclick="updateStat('assist2', false)">-</button>
+            </p>
+            
+            <p>Rebounds: <span id="rebound2">0</span> 
+                <button onclick="updateStat('rebound2', true)">+</button>
+                <button onclick="updateStat('rebound2', false)">-</button>
+            </p>
+            
+            <p>Steals: <span id="steal2">0</span> 
+                <button onclick="updateStat('steal2', true)">+</button>
+                <button onclick="updateStat('steal2', false)">-</button>
+            </p>
+            
+            <p>Blocks: <span id="block2">0</span> 
+                <button onclick="updateStat('block2', true)">+</button>
+                <button onclick="updateStat('block2', false)">-</button>
+            </p>
+            
+            <p>Fouls: <span id="foul2">0</span> 
+                <button onclick="updateStat('foul2', true)">+</button>
+                <button onclick="updateStat('foul2', false)">-</button>
+            </p>
+        </div>
+        <div class="players__3">
+            <input type="text" placeholder="Enter Player Name">
+            <p>Points: <span id="point-3">0</span> 
+                <button onclick="updateStat('point-3', true)">+</button>
+                <button onclick="updateStat('point-3', false)">-</button>
+            </p>
+            
+            <p>Assists: <span id="assist3">0</span> 
+                <button onclick="updateStat('assist3', true)">+</button>
+                <button onclick="updateStat('assist3', false)">-</button>
+            </p>
+            
+            <p>Rebounds: <span id="rebound3">0</span> 
+                <button onclick="updateStat('rebound3', true)">+</button>
+                <button onclick="updateStat('rebound3', false)">-</button>
+            </p>
+            
+            <p>Steals: <span id="steal3">0</span> 
+                <button onclick="updateStat('steal3', true)">+</button>
+                <button onclick="updateStat('steal3', false)">-</button>
+            </p>
+            
+            <p>Blocks: <span id="block3">0</span> 
+                <button onclick="updateStat('block3', true)">+</button>
+                <button onclick="updateStat('block3', false)">-</button>
+            </p>
+            
+            <p>Fouls: <span id="foul3">0</span> 
+                <button onclick="updateStat('foul3', true)">+</button>
+                <button onclick="updateStat('foul3', false)">-</button>
+            </p>
+        </div>
+        <div class="players__4"><input type="text" placeholder="Enter Player Name">
+            <p>Points: <span id="point-4">0</span> 
+                <button onclick="updateStat('point-4', true)">+</button>
+                <button onclick="updateStat('point-4', false)">-</button>
+            </p>
+            
+            <p>Assists: <span id="assist4">0</span> 
+                <button onclick="updateStat('assist4', true)">+</button>
+                <button onclick="updateStat('assist4', false)">-</button>
+            </p>
+            
+            <p>Rebounds: <span id="rebound4">0</span> 
+                <button onclick="updateStat('rebound4', true)">+</button>
+                <button onclick="updateStat('rebound4', false)">-</button>
+            </p>
+            
+            <p>Steals: <span id="steal4">0</span> 
+                <button onclick="updateStat('steal4', true)">+</button>
+                <button onclick="updateStat('steal4', false)">-</button>
+            </p>
+            
+            <p>Blocks: <span id="block4">0</span> 
+                <button onclick="updateStat('block4', true)">+</button>
+                <button onclick="updateStat('block4', false)">-</button>
+            </p>
+            
+            <p>Fouls: <span id="foul4">0</span> 
+                <button onclick="updateStat('foul4', true)">+</button>
+                <button onclick="updateStat('foul4', false)">-</button>
+            </p></div>
+        <div class="players__5"><input type="text" placeholder="Enter Player Name">
+            <p>Points: <span id="point-5">0</span> 
+                <button onclick="updateStat('point-5', true)">+</button>
+                <button onclick="updateStat('point-5', false)">-</button>
+            </p>
+            
+            <p>Assists: <span id="assist5">0</span> 
+                <button onclick="updateStat('assist5', true)">+</button>
+                <button onclick="updateStat('assist5', false)">-</button>
+            </p>
+            
+            <p>Rebounds: <span id="rebound5">0</span> 
+                <button onclick="updateStat('rebound5', true)">+</button>
+                <button onclick="updateStat('rebound5', false)">-</button>
+            </p>
+            
+            <p>Steals: <span id="steal5">0</span> 
+                <button onclick="updateStat('steal5', true)">+</button>
+                <button onclick="updateStat('steal5', false)">-</button>
+            </p>
+            
+            <p>Blocks: <span id="block5">0</span> 
+                <button onclick="updateStat('block5', true)">+</button>
+                <button onclick="updateStat('block5', false)">-</button>
+            </p>
+            
+            <p>Fouls: <span id="foul5">0</span> 
+                <button onclick="updateStat('foul5', true)">+</button>
+                <button onclick="updateStat('foul5', false)">-</button>
+            </p></div>
+        <div class="players__6"><input type="text" placeholder="Enter Player Name">
+            <p>Points: <span id="point-6">0</span> 
+                <button onclick="updateStat('point-6', true)">+</button>
+                <button onclick="updateStat('point-6', false)">-</button>
+            </p>
+            
+            <p>Assists: <span id="assist6">0</span> 
+                <button onclick="updateStat('assist6', true)">+</button>
+                <button onclick="updateStat('assist6', false)">-</button>
+            </p>
+            
+            <p>Rebounds: <span id="rebound6">0</span> 
+                <button onclick="updateStat('rebound6', true)">+</button>
+                <button onclick="updateStat('rebound6', false)">-</button>
+            </p>
+            
+            <p>Steals: <span id="steal6">0</span> 
+                <button onclick="updateStat('steal6', true)">+</button>
+                <button onclick="updateStat('steal6', false)">-</button>
+            </p>
+            
+            <p>Blocks: <span id="block6">0</span> 
+                <button onclick="updateStat('block6', true)">+</button>
+                <button onclick="updateStat('block6', false)">-</button>
+            </p>
+            
+            <p>Fouls: <span id="foul6">0</span> 
+                <button onclick="updateStat('foul6', true)">+</button>
+                <button onclick="updateStat('foul6', false)">-</button>
+            </p></div>
+        <div class="players__7"><input type="text" placeholder="Enter Player Name">
+            <p>Points: <span id="point-7">0</span> 
+                <button onclick="updateStat('point-7', true)">+</button>
+                <button onclick="updateStat('point-7', false)">-</button>
+            </p>
+            
+            <p>Assists: <span id="assist7">0</span> 
+                <button onclick="updateStat('assist7', true)">+</button>
+                <button onclick="updateStat('assist7', false)">-</button>
+            </p>
+            
+            <p>Rebounds: <span id="rebound7">0</span> 
+                <button onclick="updateStat('rebound7', true)">+</button>
+                <button onclick="updateStat('rebound7', false)">-</button>
+            </p>
+            
+            <p>Steals: <span id="steal7">0</span> 
+                <button onclick="updateStat('steal7', true)">+</button>
+                <button onclick="updateStat('steal7', false)">-</button>
+            </p>
+            
+            <p>Blocks: <span id="block7">0</span> 
+                <button onclick="updateStat('block7', true)">+</button>
+                <button onclick="updateStat('block7', false)">-</button>
+            </p>
+            
+            <p>Fouls: <span id="foul7">0</span> 
+                <button onclick="updateStat('foul7', true)">+</button>
+                <button onclick="updateStat('foul7', false)">-</button>
+            </p></div>
+        <div class="players__8"><input type="text" placeholder="Enter Player Name">
+            <p>Points: <span id="point-8">0</span> 
+                <button onclick="updateStat('point-8', true)">+</button>
+                <button onclick="updateStat('point-8', false)">-</button>
+            </p>
+            
+            <p>Assists: <span id="assist8">0</span> 
+                <button onclick="updateStat('assist8', true)">+</button>
+                <button onclick="updateStat('assist8', false)">-</button>
+            </p>
+            
+            <p>Rebounds: <span id="rebound8">0</span> 
+                <button onclick="updateStat('rebound8', true)">+</button>
+                <button onclick="updateStat('rebound8', false)">-</button>
+            </p>
+            
+            <p>Steals: <span id="steal8">0</span> 
+                <button onclick="updateStat('steal8', true)">+</button>
+                <button onclick="updateStat('steal8', false)">-</button>
+            </p>
+            
+            <p>Blocks: <span id="block8">0</span> 
+                <button onclick="updateStat('block8', true)">+</button>
+                <button onclick="updateStat('block8', false)">-</button>
+            </p>
+            
+            <p>Fouls: <span id="foul8">0</span> 
+                <button onclick="updateStat('foul8', true)">+</button>
+                <button onclick="updateStat('foul8', false)">-</button>
+            </p></div>
+        <div class="players__9"><input type="text" placeholder="Enter Player Name">
+            <p>Points: <span id="point-9">0</span> 
+                <button onclick="updateStat('point-9', true)">+</button>
+                <button onclick="updateStat('point-9', false)">-</button>
+            </p>
+            
+            <p>Assists: <span id="assist9">0</span> 
+                <button onclick="updateStat('assist9', true)">+</button>
+                <button onclick="updateStat('assist9', false)">-</button>
+            </p>
+            
+            <p>Rebounds: <span id="rebound9">0</span> 
+                <button onclick="updateStat('rebound9', true)">+</button>
+                <button onclick="updateStat('rebound9', false)">-</button>
+            </p>
+            
+            <p>Steals: <span id="steal9">0</span> 
+                <button onclick="updateStat('steal9', true)">+</button>
+                <button onclick="updateStat('steal9', false)">-</button>
+            </p>
+            
+            <p>Blocks: <span id="block9">0</span> 
+                <button onclick="updateStat('block9', true)">+</button>
+                <button onclick="updateStat('block9', false)">-</button>
+            </p>
+            
+            <p>Fouls: <span id="foul9">0</span> 
+                <button onclick="updateStat('foul9', true)">+</button>
+                <button onclick="updateStat('foul9', false)">-</button>
+            </p></div>
+        <div class="players__10"><input type="text" placeholder="Enter Player Name">
+            <p>Points: <span id="point-10">0</span> 
+                <button onclick="updateStat('point-10', true)">+</button>
+                <button onclick="updateStat('point-10', false)">-</button>
+            </p>
+            
+            <p>Assists: <span id="assist10">0</span> 
+                <button onclick="updateStat('assist10', true)">+</button>
+                <button onclick="updateStat('assist10', false)">-</button>
+            </p>
+            
+            <p>Rebounds: <span id="rebound10">0</span> 
+                <button onclick="updateStat('rebound10', true)">+</button>
+                <button onclick="updateStat('rebound10', false)">-</button>
+            </p>
+            
+            <p>Steals: <span id="steal10">0</span> 
+                <button onclick="updateStat('steal10', true)">+</button>
+                <button onclick="updateStat('steal10', false)">-</button>
+            </p>
+            
+            <p>Blocks: <span id="block10">0</span> 
+                <button onclick="updateStat('block10', true)">+</button>
+                <button onclick="updateStat('block10', false)">-</button>
+            </p>
+            
+            <p>Fouls: <span id="foul10">0</span> 
+                <button onclick="updateStat('foul10', true)">+</button>
+                <button onclick="updateStat('foul10', false)">-</button>
+            </p></div>
+        <div class="players__11"><input type="text" placeholder="Enter Player Name">
+            <p>Points: <span id="point-11">0</span> 
+                <button onclick="updateStat('point-11', true)">+</button>
+                <button onclick="updateStat('point-11', false)">-</button>
+            </p>
+            
+            <p>Assists: <span id="assist2">0</span> 
+                <button onclick="updateStat('assist11', true)">+</button>
+                <button onclick="updateStat('assist11', false)">-</button>
+            </p>
+            
+            <p>Rebounds: <span id="rebound11">0</span> 
+                <button onclick="updateStat('rebound11', true)">+</button>
+                <button onclick="updateStat('rebound11', false)">-</button>
+            </p>
+            
+            <p>Steals: <span id="steal11">0</span> 
+                <button onclick="updateStat('steal11', true)">+</button>
+                <button onclick="updateStat('steal11', false)">-</button>
+            </p>
+            
+            <p>Blocks: <span id="block11">0</span> 
+                <button onclick="updateStat('block11', true)">+</button>
+                <button onclick="updateStat('block11', false)">-</button>
+            </p>
+            
+            <p>Fouls: <span id="foul11">0</span> 
+                <button onclick="updateStat('foul11', true)">+</button>
+                <button onclick="updateStat('foul11', false)">-</button>
+            </p></div>
+        <div class="players__12"><input type="text" placeholder="Enter Player Name">
+            <p>Points: <span id="point-12">0</span> 
+                <button onclick="updateStat('point-12', true)">+</button>
+                <button onclick="updateStat('point-12', false)">-</button>
+            </p>
+            
+            <p>Assists: <span id="assist12">0</span> 
+                <button onclick="updateStat('assist12', true)">+</button>
+                <button onclick="updateStat('assist12', false)">-</button>
+            </p>
+            
+            <p>Rebounds: <span id="rebound12">0</span> 
+                <button onclick="updateStat('rebound12', true)">+</button>
+                <button onclick="updateStat('rebound12', false)">-</button>
+            </p>
+            
+            <p>Steals: <span id="steal12">0</span> 
+                <button onclick="updateStat('steal12', true)">+</button>
+                <button onclick="updateStat('steal12', false)">-</button>
+            </p>
+            
+            <p>Blocks: <span id="block12">0</span> 
+                <button onclick="updateStat('block12', true)">+</button>
+                <button onclick="updateStat('block12', false)">-</button>
+            </p>
+            
+            <p>Fouls: <span id="foul12">0</span> 
+                <button onclick="updateStat('foul12', true)">+</button>
+                <button onclick="updateStat('foul12', false)">-</button>
+            </p></div>
+        <div class="players__13"><input type="text" placeholder="Enter Player Name">
+            <p>Points: <span id="point-13">0</span> 
+                <button onclick="updateStat('point-13', true)">+</button>
+                <button onclick="updateStat('point-13', false)">-</button>
+            </p>
+            
+            <p>Assists: <span id="assist13">0</span> 
+                <button onclick="updateStat('assist13', true)">+</button>
+                <button onclick="updateStat('assist13', false)">-</button>
+            </p>
+            
+            <p>Rebounds: <span id="rebound13">0</span> 
+                <button onclick="updateStat('rebound13', true)">+</button>
+                <button onclick="updateStat('rebound13', false)">-</button>
+            </p>
+            
+            <p>Steals: <span id="steal13">0</span> 
+                <button onclick="updateStat('steal13', true)">+</button>
+                <button onclick="updateStat('steal13', false)">-</button>
+            </p>
+            
+            <p>Blocks: <span id="block13">0</span> 
+                <button onclick="updateStat('block13', true)">+</button>
+                <button onclick="updateStat('block13', false)">-</button>
+            </p>
+            
+            <p>Fouls: <span id="foul13">0</span> 
+                <button onclick="updateStat('foul13', true)">+</button>
+                <button onclick="updateStat('foul13', false)">-</button>
+            </p></div>
+        <div class="players__14"><input type="text" placeholder="Enter Player Name">
+            <p>Points: <span id="point-14">0</span> 
+                <button onclick="updateStat('point-14', true)">+</button>
+                <button onclick="updateStat('point-14', false)">-</button>
+            </p>
+            
+            <p>Assists: <span id="assist14">0</span> 
+                <button onclick="updateStat('assist14', true)">+</button>
+                <button onclick="updateStat('assist14', false)">-</button>
+            </p>
+            
+            <p>Rebounds: <span id="rebound14">0</span> 
+                <button onclick="updateStat('rebound14', true)">+</button>
+                <button onclick="updateStat('rebound14', false)">-</button>
+            </p>
+            
+            <p>Steals: <span id="steal14">0</span> 
+                <button onclick="updateStat('steal14', true)">+</button>
+                <button onclick="updateStat('steal14', false)">-</button>
+            </p>
+            
+            <p>Blocks: <span id="block14">0</span> 
+                <button onclick="updateStat('block14', true)">+</button>
+                <button onclick="updateStat('block14', false)">-</button>
+            </p>
+            
+            <p>Fouls: <span id="foul14">0</span> 
+                <button onclick="updateStat('foul14', true)">+</button>
+                <button onclick="updateStat('foul14', false)">-</button>
+            </p></div>
+        <div class="players__15"><input type="text" placeholder="Enter Player Name">
+            <p>Points: <span id="point-15">0</span> 
+                <button onclick="updateStat('point-15', true)">+</button>
+                <button onclick="updateStat('point-15', false)">-</button>
+            </p>
+            
+            <p>Assists: <span id="assist15">0</span> 
+                <button onclick="updateStat('assist15', true)">+</button>
+                <button onclick="updateStat('assist15', false)">-</button>
+            </p>
+            
+            <p>Rebounds: <span id="rebound15">0</span> 
+                <button onclick="updateStat('rebound15', true)">+</button>
+                <button onclick="updateStat('rebound15', false)">-</button>
+            </p>
+            
+            <p>Steals: <span id="steal15">0</span> 
+                <button onclick="updateStat('steal15', true)">+</button>
+                <button onclick="updateStat('steal15', false)">-</button>
+            </p>
+            
+            <p>Blocks: <span id="block15">0</span> 
+                <button onclick="updateStat('block15', true)">+</button>
+                <button onclick="updateStat('block15', false)">-</button>
+            </p>
+            
+            <p>Fouls: <span id="foul15">0</span> 
+                <button onclick="updateStat('foul15', true)">+</button>
+                <button onclick="updateStat('foul15', false)">-</button>
+            </p></div>
+        
+    </div>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <p>Total Team Points: <span id="total-score">0</span></p>
+        <p>Total Team Assists: <span id="total-assist">0</span></p>
+        <p>Total Team Rebounds: <span id="total-rebound">0</span></p>
+<p>Total Team Steals: <span id="total-steal">0</span></p>
+<p>Total Team Blocks: <span id="total-block">0</span></p>
+<p>Total Team Fouls: <span id="total-fouls">0</span></p>
+<p>Team Fouls (Per Quarter): <span id="team-fouls">0</span></p>
+<button id="reset" onclick="resetTeamFouls()">Reset Team Fouls</button>
+
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
