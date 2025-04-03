@@ -276,14 +276,17 @@ button:hover {
 }
 @media (max-width: 480px) {
   .players {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    width: 100%;
   }
   .players__1, .players__2, .players__3, .players__4, .players__5, .players__6, .players__7, .players__8, .players__9, .players__10, .players__11, .players__12, .players__13, .players__14, .players__15 {
+    margin-top: 1rem;
     flex-direction: column;
     height: auto;
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
     max-width: 100%;
+    background: white;
   }
   .header {
     font-size: 1rem;
