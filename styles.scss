@@ -283,13 +283,14 @@ button:hover{
 }
 
 @media (max-width: 480px) { // Mobile Phones
-    .players{
+    .players {
+        margin-top: 2rem; // Prevent overlap with statsheet-header
         &__1, &__2, &__3, &__4, &__5, &__6, &__7, &__8, &__9, &__10, &__11, &__12, &__13, &__14, &__15{
-        flex-direction: column;
-        height: auto;
-        text-align: center;
-        padding: 0.5rem;
-        max-width: 100%;
+            flex-direction: column;
+            height: auto;
+            text-align: center;
+            padding: 0.5rem;
+            max-width: 100%;
         }    
     }
     .header {
