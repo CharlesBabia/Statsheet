@@ -282,7 +282,7 @@ button:hover{
     }
 }
 
-@media (max-width: 414px) { // Mobile Phones
+@media (max-width: 415px) { // Mobile Phones
     .players {
         margin-top: 3rem; // Ensure enough space from header
         width: 100%;
@@ -299,6 +299,7 @@ button:hover{
     .header {
         font-size: 1rem;
         text-align: center;
+       display:none;
     }
     .statsheet-header {
         flex-direction: column;
